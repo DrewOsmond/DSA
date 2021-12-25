@@ -22,6 +22,10 @@ function isValid(s: string): boolean {
   return stack.length === 0;
 }
 
+//a stack is a perfect data structure here because we we should never find a closing bracket before an opening one.
+//if we do, we would add it to the stack and never pop it off (meaning the length of the stack won't be empty, so it's not valid)
+//
+
 console.log(isValid("({[]})"));
 console.log(isValid("(){}}{"));
 console.log(isValid("(]"));
