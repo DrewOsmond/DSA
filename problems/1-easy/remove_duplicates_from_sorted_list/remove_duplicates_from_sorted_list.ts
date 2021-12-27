@@ -10,14 +10,7 @@
  * }
  */
 
-class ListNode {
-  val: number;
-  next: ListNode | null;
-  constructor(val?: number, next?: ListNode | null) {
-    this.val = val === undefined ? 0 : val;
-    this.next = next === undefined ? null : next;
-  }
-}
+import { ListNode } from "../../abstract_data_types";
 
 function deleteDuplicates(head: ListNode | null): ListNode | null {
   //keep a pointer to the last unique node
@@ -37,3 +30,5 @@ function deleteDuplicates(head: ListNode | null): ListNode | null {
   //return the head
   return head;
 }
+
+console.log(deleteDuplicates);
