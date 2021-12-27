@@ -1,3 +1,4 @@
+//complexity O(n)
 function containsDuplicate(nums: number[]): boolean {
   //keep track of all the numbers we have currently seen.
   const seen: { [key: number]: boolean } = {};

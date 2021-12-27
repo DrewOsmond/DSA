@@ -1,3 +1,4 @@
+//complexity: it's O(N * Needle) so... maybe shortened to just O(n) ?? I'd ask someone for clarification
 function strStr(haystack: string, needle: string): number {
   //if both values are empty, return 0 since the empty string is at the 0th index.
   if (haystack.length === 0 && needle.length === 0) {
