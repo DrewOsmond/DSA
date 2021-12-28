@@ -1,3 +1,4 @@
+import { ListNode } from "../../abstract_data_types";
 /**
  * Definition for singly-linked list.
  * class ListNode {
@@ -9,8 +10,6 @@
  *     }
  * }
  */
-
-import { ListNode } from "../../abstract_data_types";
 
 function deleteDuplicates(head: ListNode | null): ListNode | null {
   //keep a pointer to the last unique node
