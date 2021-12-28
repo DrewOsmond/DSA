@@ -4,7 +4,6 @@ function twoSum(nums: number[], target: number): number[] {
   //as well as a boolean on if that index has been added to the returned array or not.
   const mappedNums: { [key: string]: [number, boolean][] } = {};
   const indexesToReturn: number[] = [];
-
   //loop through the nums array to look at each number
   for (let i = 0; i < nums.length; i++) {
     const val: number = nums[i];
@@ -16,7 +15,6 @@ function twoSum(nums: number[], target: number): number[] {
     } else {
       mappedNums[val] = [[i, false]];
     }
-
     //check to see if the difference is a number in our mapped array
     if (mappedNums[difference]) {
       //loop through the array of touples in our mapped array
@@ -34,7 +32,6 @@ function twoSum(nums: number[], target: number): number[] {
       }
     }
   }
-
   return indexesToReturn;
 }
 
