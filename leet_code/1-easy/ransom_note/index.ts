@@ -2,7 +2,7 @@
 
 function canConstruct(ransomNote: string, magazine: string): boolean {
   const magazineCount: { [key: string]: number } = {};
-
+ 
   for (let char of magazine) {
     magazineCount[char]
       ? (magazineCount[char] = magazineCount[char] + 1)

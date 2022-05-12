@@ -6,6 +6,9 @@ function sortArrayByParity(nums: number[]): number[] {
 
 		if (num % 2 === 0) {
 			const numAtPointer: number = nums[pointer];
+			nums[pointer] = num;
+			nums[i] = numAtPointer;
+			pointer++;
 		}
 	}
 
