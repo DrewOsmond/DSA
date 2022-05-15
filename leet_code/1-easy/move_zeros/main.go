@@ -12,5 +12,6 @@ func moveZeroes(nums []int)  {
 
 	for idx < len(nums) {
 		nums[idx] = 0
+		idx++
 	}
 }
