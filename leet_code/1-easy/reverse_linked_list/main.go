@@ -25,5 +25,3 @@ package reverseList
 
 	return rev
 }
-
-// 3-4  2-1 
