@@ -23,7 +23,7 @@ package reverseList
 		rev = ph
 	}
 
-	return cur
+	return rev
 }
 
 // 3-4  2-1 
