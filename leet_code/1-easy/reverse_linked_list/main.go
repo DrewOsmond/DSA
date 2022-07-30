@@ -7,21 +7,15 @@ package reverseList
  }
 
 
- func reverseList(head *ListNode) *ListNode {
-    if head == nil {
-		return head
+func reverseList(head *ListNode) *ListNode {
+	var prev *ListNode
+
+	for head != nil {
+		next := head.Next
+		head.Next = prev
+		prev = head
+		head = next
 	}
 
-	var rev *ListNode = head
-	cur := rev.Next
-	rev.Next = nil
-
-	for cur != nil {
-		ph := cur
-		cur = cur.Next
-		ph.Next = rev
-		rev = ph
-	}
-
-	return rev
+	return prev
 }
